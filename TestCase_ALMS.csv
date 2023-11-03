@@ -1,0 +1,24 @@
+Test Case 1: Employee Login,,,,,,,,,
+,,,,,,,,,
+TestCaseId,Component,Description/Test Summary,Pre-requisites,Test Steps,Test Data,Expected Result,Actual Result,Status,Test Executed By
+LMS_1,Employee Login,Verify that employees can successfully log in to the Leave Management System.,System is accessible,1. Open the Leave Management System.                       2.Enter valid employee login credentials.,"Click the ""Log In"" button. | Valid employee username and password | The system should grant access, and the employee should be successfully logged in.",Display  Login Button.Vaild username & password and submit for log in  The employee should be successfully logged in. ,[Pass/Fail],PASS,Abhijeet
+,,,,,,,,,
+Test Case 2: Leave Request Submission,,,,,,,,,
+,,,,,,,,,
+TestCaseId,Component,Description/Test Summary,Pre-requisites,Test Steps,Test Data,Expected Result,Actual Result,Status,Test Executed By
+LMS_2,Leave Request Submission,Verify that employees can submit leave requests successfully.,Employee is logged in,"1. Navigate to the ""Request Leave"" section.     2.Fill in the leave request form with valid details. 3.Click the ""Submit"" button.","Fill in the leave request form with valid details Click the ""Submit"" button. | Leave request details, e.g., leave type, start date, end date, reason",The system should accept the leave request and display a confirmation message. ,[Pass/Fail],PASS,Abhishek
+,,,,,,,,,
+Test Case 3: Manager Approval,,,,,,,,,
+,,,,,,,,,
+TestCaseId,Component,Description/Test Summary,Pre-requisites,Test Steps,Test Data,Expected Result,Actual Result,Status,Test Executed By
+LMS_3,Manager Approval,Verify that managers can approve or reject leave requests.,Manager is logged in,"1. Log in as a manager.             2.Go to the ""Pending Approvals"" section.               3.Review and take action on pending leave requests (approve or reject).","Go to the ""Pending Approvals"" section. pending leave requests (approve or reject)","Review and take action on pending leave requests (approve or reject). | Leave request details (e.g., leave type, start date, end date, reason) |",[Pass/Fail],PASS,Nithin
+,,,,,,,,,
+Test Case 4: Leave Balance Update,,,,,,,,,
+,,,,,,,,,
+TestCaseId,Component,Description/Test Summary,Pre-requisites,Test Steps,Test Data,Expected Result,Actual Result,Status,Test Executed By
+LMS_4,Leave Balance Update,Verify that an employee's leave balance is updated correctly after leave approval.,Employee and Manager are logged in,1. Log in as an employee and check the current leave balance.      2.Submit a leave request and have the manager approve it            3.,Details about the leave request and the employee's current leave balance.  Submit a leave request and have the manager approve it.,"Display the updated leave balance. | Leave request details (e.g., leave type, start date, end date, reason), employee and manager details | The leave balance should be reduced by the approved leave duration. ",[Pass/Fail],PASS,Aditya Anant
+,,,,,,,,,
+Test Case 5: Leave Cancellation,,,,,,,,,
+,,,,,,,,,
+TestCaseId,Component,Description/Test Summary,Pre-requisites,Test Steps,Test Data,Expected Result,Actual Result,Status,Test Executed By
+LMS_5,Leave Cancellation,Verify that employees can cancel their pending leave requests.,Employee is logged in,"1. Log in as an employee.            2.Navigate to the ""My Leave Requests"" section.               3.Select a pending leave request and click the ""Cancel"" button",Specific details about the pending leave request and relevant employee information.,"Leave request details (e.g., leave type, start date, end date), employee details | The system should successfully cancel the leave request and update the leave balance accordingly. ",[Pass/Fail],PASS,abhijeet
